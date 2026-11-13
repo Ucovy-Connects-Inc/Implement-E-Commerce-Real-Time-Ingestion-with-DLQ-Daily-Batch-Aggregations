@@ -1,6 +1,6 @@
-# GCP System Design & Technical Interview Deep Dive
+# GCP System Design & Technical  Deep Dive
 
-This document contains targeted, scenario-based questions and high-impact answers frequently asked in senior GCP Data Engineer, Cloud Architect, and DevOps interviews.
+This document contains targeted, scenario-based questions and high-impact answers frequently asked in senior GCP Data Engineer, Cloud Architect, and DevOps  s.
 
 ---
 
@@ -47,7 +47,7 @@ This document contains targeted, scenario-based questions and high-impact answer
 
 ## 4. Cost Optimization Mastery in BigQuery
 
-### What to state in the interview:
+### What to state in the  :
 1. **Partitioning**:
    - Always partition by Date or Timestamp (`PARTITION BY DATE(order_timestamp)`).
    - Enforce `require_partition_filter = true` on production tables so runaway analyst queries without date filters get rejected automatically.
@@ -118,7 +118,7 @@ This document contains targeted, scenario-based questions and high-impact answer
 
 ---
 
-### What Makes This Answer Stand Out to Interviewers:
+### What Makes This Answer Stand Out to  ers:
 1. **Handling Poison Pills**: Mentioning dead-letter queues (`TaggedOutput`) proves you have operated pipelines in production where dirty data is inevitable.
 2. **Cost Awareness**: Highlighting date partitioning, clustering, and the Storage Write API proves you know how to prevent runaway Google Cloud bills.
 3. **Enterprise Security**: Calling out custom Service Accounts and Private Google Access shows architectural maturity.
