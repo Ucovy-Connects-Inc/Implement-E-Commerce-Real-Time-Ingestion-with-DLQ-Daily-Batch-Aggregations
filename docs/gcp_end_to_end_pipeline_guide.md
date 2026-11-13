@@ -1,6 +1,6 @@
-# End-to-End GCP Production Stack & Pipeline: Comprehensive Interview Masterclass
+# End-to-End GCP Production Stack & Pipeline: Comprehensive Masterclass
 
-This masterclass guide provides a complete blueprint for **Data Engineering, Cloud Architecture, and DevOps/SRE interviews** on Google Cloud Platform (GCP). It covers architecture patterns, service selection matrices, step-by-step Console & CLI walkthroughs, common production failure modes, and interview trade-off answers.
+This masterclass guide provides a complete blueprint for **Data Engineering, Cloud Architecture, and DevOps/SRE** on Google Cloud Platform (GCP). It covers architecture patterns, service selection matrices, step-by-step Console & CLI walkthroughs, common production failure modes, and interview trade-off answers.
 
 ---
 
@@ -43,7 +43,7 @@ flowchart LR
 
 ## 2. GCP Service Matrix: "What Does What, Where, and How to Use It"
 
-| Service Category | GCP Service | Primary Purpose | Ideal Use Case | When NOT to Use (Interview Gotchas) |
+| Service Category | GCP Service | Primary Purpose | Ideal Use Case | When NOT to Use (Gotchas) |
 | :--- | :--- | :--- | :--- | :--- |
 | **Ingestion** | **Cloud Pub/Sub** | Fully managed global real-time asynchronous messaging bus | Decoupling producers & consumers; event-driven ingest; IoT sensor streams | Point-to-point synchronous RPC (use Cloud Run/gRPC); ordered file archiving. |
 | **Ingestion / Lake** | **Cloud Storage (GCS)** | Scalable object storage (Standard, Nearline, Coldline, Archive) | Raw file landing, Parquet/Avro data lakes, backups, staging data | Relational queries with ACID indexing; low-latency key-value lookups (<10ms). |
@@ -82,7 +82,7 @@ Here is the exact blueprint to deploy an end-to-end pipeline: **Pub/Sub $\to$ Da
    PARTITION BY DATE(order_timestamp)
    CLUSTER BY customer_id, status;
    ```
-   > **Interview Tip**: Always mention **Partitioning** (by date) and **Clustering** (by high-cardinality query filter columns like `customer_id`) to demonstrate cost optimization and query speed awareness.
+   > **Tip**: Always mention **Partitioning** (by date) and **Clustering** (by high-cardinality query filter columns like `customer_id`) to demonstrate cost optimization and query speed awareness.
 
 ---
 
@@ -221,7 +221,7 @@ outputDeadletterTable=$PROJECT_ID:ecommerce_analytics.orders_dlq
 
 ## 5. Comprehensive Error Handling & Troubleshooting Guide
 
-Interview questions frequently center around: *"What happens when service A can't talk to service B?"* or *"How do you diagnose a pipeline backlog?"*
+questions frequently center around: *"What happens when service A can't talk to service B?"* or *"How do you diagnose a pipeline backlog?"*
 
 ### Failure Mode 1: IAM Permission Denied (`403 Forbidden`)
 - **Symptoms**: Dataflow job fails at startup; Cloud Functions fail to write to Pub/Sub; Cloud Composer task logs output `Access Denied`.
@@ -279,7 +279,7 @@ Interview questions frequently center around: *"What happens when service A can'
 
 ---
 
-## 6. High-Frequency GCP Interview Scenarios & Winning Answers
+## 6. High-Frequency GCP Scenarios & Winning Answers
 
 ### Q1: "When do you use Cloud Composer (Airflow) vs. Cloud Workflows vs. Cloud Dataflow?"
 - **Answer Structure**:
