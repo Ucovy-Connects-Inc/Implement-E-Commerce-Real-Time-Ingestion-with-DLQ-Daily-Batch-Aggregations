@@ -1,4 +1,4 @@
-# Plain-English Guide to Your GCP Project & Interview Preparation
+# Plain-English Guide to Your GCP Project Preparation
 
 Don't let the directory structure intimidate you! Every folder here represents **one specific responsibility** in a real cloud team:
 
@@ -9,7 +9,7 @@ GCP/
 ├── pipelines/       👉 "The Engines"   (The actual code moving & transforming data)
 ├── scripts/         👉 "The Testers"   (Sends test data & triggers errors)
 ├── monitoring/      👉 "The Alarms"    (Alerts you when something breaks)
-└── docs/            👉 "The Cheatsheet"(Your interview answers & study notes)
+└── docs/            👉 "The Cheatsheet"(Your answers & study notes)
 ```
 
 ---
