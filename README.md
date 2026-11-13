@@ -1,8 +1,8 @@
 # GCP End-to-End Enterprise Data Platform & Pipeline
 
-> 💡 **New to this repository or preparing for interviews?** Start with the **[Plain-English Guide & Interview Preparation](docs/plain_english_guide_and_interview_prep.md)** to understand what each folder and file does, followed by the **[Click-by-Click Console Guide](docs/gcp_end_to_end_pipeline_interview_guide.md)**.
+> 💡 **New to this repository or preparing for?** Start with the **[Plain-English Guide &  Preparation](docs/plain_english_guide_and__prep.md)** to understand what each folder and file does, followed by the **[Click-by-Click Console Guide](docs/gcp_end_to_end_pipeline__guide.md)**.
 
-A production-ready reference implementation of a hybrid streaming + batch data platform on **Google Cloud Platform (GCP)**, designed for enterprise deployments and technical interview preparation.
+A production-ready reference implementation of a hybrid streaming + batch data platform on **Google Cloud Platform (GCP)**, designed for enterprise deployments and technical  preparation.
 
 ---
 
@@ -45,7 +45,7 @@ flowchart TD
 
 ```text
 GCP/
-├── README.md                               <-- Root project guide & interview cheatsheet
+├── README.md                               <-- Root project guide &  cheatsheet
 ├── terraform/                              <-- Infrastructure as Code (Terraform)
 │   ├── main.tf                             <-- Core infrastructure declarations
 │   ├── variables.tf                        <-- Configurable project variables
@@ -84,9 +84,9 @@ GCP/
 │   ├── simulate_poison_pill.py             <-- Error generator (tests DLQ routing)
 │   └── deploy.sh                           <-- One-click deployment script
 └── docs/
-    ├── plain_english_guide_and_interview_prep.md <-- 🟢 START HERE: Plain-English guide & interview pitch
-    ├── gcp_end_to_end_pipeline_interview_guide.md <-- Complete Console & CLI click-by-click guide
-    ├── interview_deep_dive.md              <-- System design answers & trade-offs
+    ├── plain_english_guide_and_prep.md <-- 🟢 START HERE: Plain-English guide &  pitch
+    ├── gcp_end_to_end_pipeline_guide.md <-- Complete Console & CLI click-by-click guide
+    ├── deep_dive.md              <-- System design answers & trade-offs
     └── troubleshooting_playbook.md         <-- Debugging guide for production incidents
 ```
 
